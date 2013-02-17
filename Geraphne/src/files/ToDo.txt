@@ -1,0 +1,15 @@
+To-Do-Geraphne:
+
+1) Nach "Start" sollte Programm im Systemtray verschwinden (CHECK)
+
+2) Nach "Start" sollte eine zufällige Zeit im Countdown laufen
+
+3) Nachdem die Zeit abgelaufen ist soll Pop-Up-Fenster erscheinen
+
+4) Im Pop-Up-Fenster soll "Phrase" oder "Word" erscheinen für 10sec.
+    oder 5sec.
+
+5) Satz oder Wort wird aus zwei unterschiedlichen Textdateien
+    eingelesen.
+    
+6)
