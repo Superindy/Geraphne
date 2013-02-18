@@ -103,7 +103,7 @@ public class Geraphneface extends JFrame {
 		Geraphneface.class.getResource( "/Pictures/qmark.png")); 
 		 
 		PopupMenu popup = new PopupMenu(); 
-		MenuItem item = new MenuItem( "Ende" ); 
+		MenuItem item = new MenuItem( "End" ); 
 		item.addActionListener( new ActionListener() { 
 		  @Override public void actionPerformed( ActionEvent e ) { 
 		    System.exit( 0 ); 

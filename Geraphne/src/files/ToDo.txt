@@ -2,7 +2,7 @@ To-Do-Geraphne:
 
 1) Nach "Start" sollte Programm im Systemtray verschwinden (CHECK)
 
-2) Nach "Start" sollte eine zufällige Zeit im Countdown laufen
+2) Nach "Start" sollte Methode "countdown" in Function aufgerufen werden
 
 3) Nachdem die Zeit abgelaufen ist soll Pop-Up-Fenster erscheinen
 
