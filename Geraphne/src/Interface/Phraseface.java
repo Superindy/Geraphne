@@ -20,7 +20,7 @@ public class Phraseface extends JFrame {
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
+	public static void createFace() {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -43,11 +43,13 @@ public class Phraseface extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 200);
 		contentPane = new JPanel();
+		
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JTextPane textPane = new JTextPane();
+		textPane.setEditable(false);
 		textPane.setBounds(80, 11, 344, 59);
 		contentPane.add(textPane);
 		
@@ -62,6 +64,7 @@ public class Phraseface extends JFrame {
 		contentPane.add(lblEnglish);
 		
 		JTextPane textPane_1 = new JTextPane();
+		textPane_1.setEditable(false);
 		textPane_1.setBounds(80, 92, 344, 59);
 		contentPane.add(textPane_1);
 	}

@@ -2,14 +2,15 @@ To-Do-Geraphne:
 
 1) Nach "Start" sollte Programm im Systemtray verschwinden (CHECK)
 
-2) Nach "Start" sollte Methode "countdown" in Function aufgerufen werden
+2) Nach "Start" sollte Methode "countdown" in Function aufgerufen werden (CHECK)
 
-3) Nachdem die Zeit abgelaufen ist soll Pop-Up-Fenster erscheinen
+3) Excel-Tabelle in "Phraseface" einlesen und ausgeben 
 
-4) Im Pop-Up-Fenster soll "Phrase" oder "Word" erscheinen für 10sec.
+4) Nachdem die Zeit abgelaufen ist soll Pop-Up-Fenster erscheinen
+
+5) Im Pop-Up-Fenster soll "Phrase" oder "Word" erscheinen für 15sec.
     oder 5sec.
 
-5) Satz oder Wort wird aus zwei unterschiedlichen Textdateien
+6) Satz oder Wort wird aus zwei unterschiedlichen Textdateien
     eingelesen.
     
-6)

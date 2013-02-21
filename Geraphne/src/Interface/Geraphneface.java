@@ -20,6 +20,9 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextPane;
 import javax.swing.JButton;
 import javax.swing.UIManager;
+
+import Functions.Countdown;
+
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Window.Type;
@@ -97,34 +100,44 @@ public class Geraphneface extends JFrame {
 		//Start_Button_Anfang
 		JButton btnStart = new JButton("Start");
 		btnStart.addActionListener(new ActionListener() {			
+			@SuppressWarnings("static-access")
 			public void actionPerformed(ActionEvent arg0) {
+				//Startfenster verschwindet
 				setVisible(false);
-		Image image = Toolkit.getDefaultToolkit().getImage(  
-		Geraphneface.class.getResource( "/Pictures/qmark.png")); 
-		 
-		PopupMenu popup = new PopupMenu(); 
-		MenuItem item = new MenuItem( "End" ); 
-		item.addActionListener( new ActionListener() { 
-		  @Override public void actionPerformed( ActionEvent e ) { 
-		    System.exit( 0 ); 
-		  } 
-		} ); 
-		popup.add( item ); 
-		 
-		TrayIcon trayIcon = new TrayIcon( image, "Java-Tray ", popup ); 
-		trayIcon.setImageAutoSize( true );
-		
-		try{
-			SystemTray tray = SystemTray.getSystemTray(); 
-			tray.add(trayIcon);
-		}catch(Exception e){
-			JOptionPane.showMessageDialog(null, "", "Error", JOptionPane.ERROR_MESSAGE);
-		}
-		
-			}
-		});
+
+						//Programm verschwindet im Systemtray und ist nur noch als Try-Icon sichtbar
+						Image image = Toolkit.getDefaultToolkit().getImage(  
+						Geraphneface.class.getResource( "/Pictures/qmark.png")); 
+						 
+						PopupMenu popup = new PopupMenu(); 
+						MenuItem item = new MenuItem( "End" ); 
+						item.addActionListener( new ActionListener() { 
+						  @Override public void actionPerformed( ActionEvent e ) { 
+						    System.exit(0); 
+						  } 
+						} ); 
+						popup.add( item ); 
+						 
+						TrayIcon trayIcon = new TrayIcon( image, "Java-Tray ", popup ); 
+						trayIcon.setImageAutoSize( true );
+						
+						try{
+							SystemTray tray = SystemTray.getSystemTray(); 
+							tray.add(trayIcon);
+						}catch(Exception e)
+						{
+							JOptionPane.showMessageDialog(null, "", "Error", JOptionPane.ERROR_MESSAGE);
+						}
+					
+					//Countdown-Objekt instanziieren und Countdown-Methode starten
+					Countdown myCountdown = new Countdown();
+					myCountdown.CountdownGo();
+					}
+				});
 		
 		//Start_Button_Ende
+		
+		
 		btnStart.setBounds(73, 198, 89, 23);
 		contentPane.add(btnStart);
 		
